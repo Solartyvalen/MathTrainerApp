@@ -235,9 +235,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm1-SZ-KYM">
-                                <rect key="frame" x="50" y="109" width="61.666666666666657" height="35"/>
+                                <rect key="frame" x="50" y="109" width="55.666666666666657" height="28.333333333333343"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="0.0"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="XFL-6H-wHy" kind="unwind" unwindAction="unwindActionWithUnwindSegue:" id="P05-fT-Pcr"/>
                                 </connections>
@@ -305,6 +314,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wty-yy-Kan"/>
+                    <connections>
+                        <outletCollection property="secondButtonsCollection" destination="Fpz-hV-El3" collectionClass="NSMutableArray" id="1Q3-7q-nyE"/>
+                        <outletCollection property="secondButtonsCollection" destination="HIf-au-A5l" collectionClass="NSMutableArray" id="fsn-rs-qPU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXQ-Ld-WlN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="XFL-6H-wHy" userLabel="Exit" sceneMemberID="exit"/>
