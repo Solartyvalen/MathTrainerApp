@@ -13,6 +13,7 @@ final class TrainViewController: UIViewController {
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var countLabel: UILabel!
     
     // MARK: - Properties
     private var firstNumber = 0
@@ -103,6 +104,8 @@ final class TrainViewController: UIViewController {
                 secondNumber = Int.random(in: 1...99)
             }
         }
+        let countNumber: String = "Count: \(count)"
+        countLabel.text = countNumber
         let question: String = "\(firstNumber) \(sign) \(secondNumber) ="
         questionLabel.text = question
     }

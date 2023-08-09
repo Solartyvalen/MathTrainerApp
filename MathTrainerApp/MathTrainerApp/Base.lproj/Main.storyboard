@@ -301,11 +301,19 @@
                                     <action selector="rightAction:" destination="s5k-uA-wHr" eventType="touchUpInside" id="VhC-6o-tI3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moX-0H-nwU">
+                                <rect key="frame" x="302" y="94" width="62" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pPO-TT-WxS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="moX-0H-nwU" firstAttribute="top" secondItem="pPO-TT-WxS" secondAttribute="top" constant="50" id="0oQ-HI-K6h"/>
                             <constraint firstItem="Fpz-hV-El3" firstAttribute="centerX" secondItem="w3Z-3o-kz3" secondAttribute="centerX" constant="-60" id="1I6-bT-eX5"/>
+                            <constraint firstItem="pPO-TT-WxS" firstAttribute="trailing" secondItem="moX-0H-nwU" secondAttribute="trailing" constant="50" id="BGV-bg-y4w"/>
                             <constraint firstItem="bm1-SZ-KYM" firstAttribute="leading" secondItem="pPO-TT-WxS" secondAttribute="leading" constant="50" id="DqZ-8T-t5F"/>
                             <constraint firstItem="bm1-SZ-KYM" firstAttribute="top" secondItem="pPO-TT-WxS" secondAttribute="top" constant="50" id="O4P-iV-4qZ"/>
                             <constraint firstItem="HIf-au-A5l" firstAttribute="centerY" secondItem="Fpz-hV-El3" secondAttribute="centerY" id="PPR-f9-tft"/>
@@ -317,6 +325,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Wty-yy-Kan"/>
                     <connections>
+                        <outlet property="countLabel" destination="moX-0H-nwU" id="Slh-Rp-E2L"/>
                         <outlet property="leftButton" destination="Fpz-hV-El3" id="I4n-XD-sry"/>
                         <outlet property="questionLabel" destination="jp8-2f-243" id="v8I-Kd-IcD"/>
                         <outlet property="rightButton" destination="HIf-au-A5l" id="gGW-eF-E83"/>
